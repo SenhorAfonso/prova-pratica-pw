@@ -45,7 +45,7 @@ async function fetchNews() {
   filterQuantity.innerHTML = `<strong><p style="margin: 0px; margin-top: 2px">${paramsQuantity}</p></strong>`
   const quantity = params.get('qtd') ?? 10;
 
-  let url = 'http://servicodados.ibge.gov.br/api/v3/noticias';
+  let url = 'https://servicodados.ibge.gov.br/api/v3/noticias';
   params.set('qtd', quantity);
   if (params.toString()) {
     url += `?${params.toString()}`;
